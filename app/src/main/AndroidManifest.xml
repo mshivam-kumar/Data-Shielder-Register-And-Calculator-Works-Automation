@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.datahiveshield.mydata.mydairy.khata.files">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--    <uses-permission android:name="android.permission.SEND_SMS" />-->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hasFragileUserData="true"
+        android:icon="@drawable/ic_logo"
+        android:roundIcon="@drawable/ic_logo"
+        android:logo="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.slplashScreen"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        tools:ignore="AllowBackup,UnusedAttribute">
+
+        <activity
+            android:name=".splash_screen"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HOMEcustomerGroupListView"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable,RtlEnabled" />
+        <activity
+            android:name=".TableTotalView"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".InsertDbData"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".SetUpForUpdateDbData"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".UpdateDbData"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".DeleteDbData"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".ClearTableData"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".ChangeDefaultCustomerNames"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".GeneratePdf"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".DeleteCustomerGroup"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".CreateNewCustomerGroup"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".RenameCustomerGroup"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".HomeConfigureCustomerGroupDataWithMonthAndYear"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".DeleteConfigureCustomerGroupDataWithMonthAndYear"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".CreateNewConfigureCustomerGroupDataWithMonthAndYear"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".UpdateConfigureCustomerGroupDataWithMonthAndYear"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".GoogleSignIn1"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".UserInstructions"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".About"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".SharePdf"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".SaveToGoogleDrive"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+
+        <activity
+            android:name=".ServiceNotSupported"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".HOMEIndividualPersonDataListView"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".CreateNewIndividualPersonDataGroupName"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".IndividualPersonMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".InsertIndividualPersonDbData"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".TableTotalViewIndividualPersonData"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".ClearIndividualPersonDataTable"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".UpdateIndividualPersonDbData"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".SetUpForUpdateIndividualPersonDbData"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".SharePdfIndividualPerson"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".GenerateIndividualPersonDataPdf"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".DeleteIndividualPersonDbData"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".DeleteIndividualPersonGroup"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".RenameIndividualPersonGroup"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".IndividualHomeConfigureCustomerGroupDataWithMonthAndYear"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".ChooseMoneyWillGiveOrGetIndividualPersonGroup"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".CreateNewConfigureIndividualPersonDataWithMonthAndYear"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".DeleteConfigureIndividualPersonDataWithMonthAndYear"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".SendReminderIndividualPersonGetMoney"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".SettingsApp"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".SendReminderGroupMembersGetMoney"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme"
+            tools:ignore="Instantiatable" />
+
+
+    </application>
+
+</manifest>
