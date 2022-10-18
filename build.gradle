@@ -1,0 +1,119 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.datahiveshield.mydata.mydairy.khata.files"
+        minSdk 21
+        targetSdk 31
+        versionCode 27
+        versionName "1.2.4"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+//            minifyEnabled true// minifyEnabled is making app to crash making app to crash
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    configurations {
+        all{
+            exclude group: 'commons-logging', module: 'commons-logging'
+            exclude group: 'org.apache.httpcomponents'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+
+}
+
+dependencies {
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+//    implementation 'com.google.firebase:firebase-database:20.0.1'
+
+//    implementation 'com.itextpdf:itextg:5.5.10'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.play:core:1.10.0'
+//    implementation 'com.itextpdf:itext7-core:7.1.3'
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //For google sign in
+    implementation 'com.google.android.gms:play-services-auth:19.2.0'
+
+
+
+
+
+    //Handle user permissions, allow, deny, never ask again
+    implementation 'gun0912.ted:tedpermission:2.1.1'
+
+    // Google Drive Rest library
+//    implementation 'com.github.ammarptn:GDrive-Rest-Android:1.4.3'
+
+
+
+    implementation "androidx.navigation:navigation-fragment:2.3.5"
+    implementation "androidx.navigation:navigation-ui:2.3.5"
+    implementation 'com.google.android.material:material:1.4.0'
+    //Edit google sign in button , not implemented in project
+    implementation 'com.shobhitpuri.custombuttons:google-signin:1.1.0'
+
+    //Zoom image view
+
+    implementation 'com.commit451:PhotoView:1.2.4' //old release
+//    implementation 'com.github.chrisbanes:PhotoView:latest.release.here'//not working
+
+
+    // for runtime permission
+    implementation 'com.karumi:dexter:6.2.1'
+
+    //for top side toast, text with animation
+    implementation 'net.steamcrafted:load-toast:1.0.12'
+
+
+    // google drive api libs
+    //google auth
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.http-client:google-http-client-gson:1.26.0'
+    //google client api
+    implementation('com.google.api-client:google-api-client-android:1.26.0') {
+        //noinspection DuplicatePlatformClasses
+        exclude group: 'org.apache.httpcomponents'
+    }
+    //google services api
+    implementation('com.google.apis:google-api-services-drive:v3-rev136-1.25.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+
+    def lottieVersion = "3.4.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+
+
+}
