@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Data Shielder</string>
+    <string name="Open">open</string>
+    <string name="Close">close</string>
+    <string-array name="money_status_array">
+        <item>Not Paid</item>
+        <item>Paid</item>
+    </string-array>
+</resources>
